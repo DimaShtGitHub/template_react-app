@@ -1,8 +1,10 @@
-const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+import path from 'path';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
+import webpack from 'webpack';
 
-module.exports = {
+// если указать тип :webpack.Configuration станет возможным использовать
+// автозаполнение и мы сможем видеть все поля внутри
+const config: webpack.Configuration = {
   mode: "development",
   entry: path.resolve(__dirname, 'src', 'index.ts'),
   output: {
@@ -23,9 +25,6 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
-      {
-        test:
-      }
     ],
   },
   resolve: {
@@ -33,3 +32,5 @@ module.exports = {
   }
   
 };
+
+export default config;
