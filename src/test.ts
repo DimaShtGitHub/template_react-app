@@ -1,3 +1,5 @@
 export function someFn() {
-    console.log("Random func");
+    console.log("Random func ");
+
+    return ''
 }
