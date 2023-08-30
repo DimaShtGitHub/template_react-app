@@ -12,7 +12,7 @@
       // обрабатывает не только ts но и js
       "allowJs": true,
       "moduleResolution": "node",
-      "baseUrl": ".",
+      // "baseUrl": ".",
       // вместо require позволяет использовать import export
       "esModuleInterop": true,
       // позволяет использовать обычные import from 
