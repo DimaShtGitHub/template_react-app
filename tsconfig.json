@@ -1,28 +1,28 @@
 {
+  "compilerOptions": {
+    // куда собирать проект
+    "outDir": "./dist/",
+    // не позволяет указывать переменную без указания типа
+    "noImplicitAny": true,
+    "module": "es2020",
+    // в какую версию компилировать
+    "target": "es5",
+    // использовать jsx конструкторы
+    "jsx": "react-jsx",
+    // обрабатывает не только ts но и js
+    "allowJs": true,
+    "moduleResolution": "node",
+    // "baseUrl": ".",
+    // вместо require позволяет использовать import export
+    "esModuleInterop": true,
+    // позволяет использовать обычные import from
+    // вместо import * as axios from
+    "allowSyntheticDefaultImports": true
+  },
+  // позволяет компилятору собирать проект с import
+  "ts-node": {
     "compilerOptions": {
-      // куда собирать проект
-      "outDir": "./dist/",
-      // не позволяет указывать переменную без указания типа
-      "noImplicitAny": true,
-      "module": "es6",
-      // в какую версию компилировать
-      "target": "es5",
-      // использовать jsx конструкторы
-      "jsx": "react-jsx",
-      // обрабатывает не только ts но и js
-      "allowJs": true,
-      "moduleResolution": "node",
-      // "baseUrl": ".",
-      // вместо require позволяет использовать import export
-      "esModuleInterop": true,
-      // позволяет использовать обычные import from 
-      // вместо import * as axios from 
-      "allowSyntheticDefaultImports": true
-    },
-    // позволяет компилятору собирать проект с import 
-    "ts-node": {
-      "compilerOptions": {
-        "module": "CommonJS"
-      }
+      "module": "CommonJS"
     }
   }
+}
