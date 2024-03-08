@@ -1,15 +1,18 @@
-import { FunctionComponent, Suspense } from "react";
-import { Counter } from "./components/Counter";
-import "./index.scss";
+import { Suspense, useState } from "react";
+import "./styles/index.scss";
 import { Link, Route, Routes } from "react-router-dom";
 import { AboutPageAsync } from "./pages/AboutPage/AboutPage_async";
 import { MainPageAsync } from "./pages/MainPage/MainPage_async";
+import { useContext } from "../build/main.dfeb8d8146ffd69c85ea";
+import { ThemeContext } from "./theme/ThemeContext";
+import { useTheme } from "./theme/useTheme";
 
-interface AppProps {}
+const App = () => {
+  const { theme, toggleTheme } = useTheme();
 
-const App: FunctionComponent<AppProps> = () => {
   return (
-    <div className="app">
+    <div className={`app ${theme}`}>
+      <button onClick={toggleTheme}>TOGGLE</button>
       <Link to={"/"}>Главная</Link>
       <Link to={"/about"}>О сайте</Link>
       <Suspense fallback={<div>Loading...</div>}>
