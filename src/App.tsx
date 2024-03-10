@@ -1,10 +1,8 @@
-import { Suspense, useState } from "react";
-import "./styles/index.scss";
+import { Suspense } from "react";
 import { Link, Route, Routes } from "react-router-dom";
+import "./styles/index.scss";
 import { AboutPageAsync } from "./pages/AboutPage/AboutPage_async";
 import { MainPageAsync } from "./pages/MainPage/MainPage_async";
-import { useContext } from "../build/main.dfeb8d8146ffd69c85ea";
-import { ThemeContext } from "./theme/ThemeContext";
 import { useTheme } from "./theme/useTheme";
 
 const App = () => {
