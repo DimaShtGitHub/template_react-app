@@ -1,5 +1,7 @@
 # ulbi_ts
 
+![alt-text](https://github.com/DimaShtGitHub/ulbi_ts/blob/main/arcitecture.png)
+
 app - глобальные переменные, стили, типы. Все что связано с основой
 
 pages - страницы
