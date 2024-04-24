@@ -2,7 +2,15 @@
   "svg.preview.background": "white",
   "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": true,
   },
-  "eslint.validate": ["javascript"]
+  "eslint.validate": ["javascript"],
+  
+  // "css.validate": false,
+  // "less.validate": false,
+  // "scss.validate": false,
+
+  // "editor.formatOnSave": false,
+
 }
