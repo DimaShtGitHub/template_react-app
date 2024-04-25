@@ -32,7 +32,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
-    'max-len': ['error', { ignoreComments: true }],
+    'max-len': ['error', { code: 100, ignoreComments: true }],
     'no-unused-vars': 'warn',
     'react/function-component-definition': 0,
     'no-shadow': 0,
