@@ -1,6 +1,6 @@
-# ulbi_ts
+# template_react-app
 
-![alt-text](https://github.com/DimaShtGitHub/ulbi_ts/blob/main/arcitecture.png)
+![alt-text](https://github.com/DimaShtGitHub/template_react-apps/blob/main/arcitecture.png)
 
 app - глобальные переменные, стили, типы. Все что связано с основой
 

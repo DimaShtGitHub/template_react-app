@@ -1,5 +1,5 @@
 {
-  "name": "ulbi_ts",
+  "name": "template_react-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DimaShtGitHub/ulbi_ts.git"
+    "url": "git+https://github.com/DimaShtGitHub/template_react-app.git"
   },
   "author": "Dima Shtankevich",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DimaShtGitHub/ulbi_ts/issues"
+    "url": "https://github.com/DimaShtGitHub/template_react-app/issues"
   },
-  "homepage": "https://github.com/DimaShtGitHub/ulbi_ts#readme",
+  "homepage": "https://github.com/DimaShtGitHub/template_react-app#readme",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/plugin-syntax-jsx": "^7.24.1",
