@@ -1,5 +1,9 @@
 name: linting, testing, building
-on: [ push ]
+on: 
+  push:
+    branches: [main, 27_ci_pipeline]
+  pull_request:
+    branches: [main]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
