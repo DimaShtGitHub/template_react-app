@@ -19,7 +19,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react', '@typescript-eslint', 'i18next',
+    'react',
+    '@typescript-eslint',
+    'i18next',
+    'react-hooks',
   ],
   rules: {
     quotes: ['error', 'single'],
@@ -49,6 +52,10 @@ module.exports = {
         markupOnly: true, ignoreAttribute: ['to', 'data-testid'],
       },
     ],
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
   },
   globals: {
     __IS_DEV__: true,
