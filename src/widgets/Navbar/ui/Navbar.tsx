@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Modal } from 'shared/ui/Modal/Modal';
@@ -26,7 +27,6 @@ export function Navbar({ className }: NavbarProps) {
       >
         {t('Войти')}
       </Button>
-
       <Modal isOpen={isAuthModal} onClose={onToggleModal}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Iusto, debitis vel. Harum necessitatibus vero minus quidem!
