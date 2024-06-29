@@ -70,9 +70,7 @@ export const Modal = (props: ModalProps) => {
     [cls.isClosing]: isClosing,
   };
 
-  if (lazy && !isMounted) {
-    return null;
-  }
+  if (lazy && !isMounted) return null;
 
   return (
     <Portal>
